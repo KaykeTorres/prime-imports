@@ -1,0 +1,84 @@
+/* ============================================
+   VARIAVEIS.CSS — Design Tokens
+   Mude aqui para transformar toda a identidade
+   ============================================ */
+
+
+:root {
+  /* --- CORES DE FUNDO --- */
+  --color-bg-primary:   #000000;
+  --color-bg-secondary: #111111;
+  --color-bg-card:      #161616;
+  --color-border-card: #D4AF37;
+  --color-border-header: #d4af378f;
+
+
+  /* --- CORES DE TEXTO --- */
+
+  --color-text-primary:    #ffffff;
+  --color-text-secondary:  #808080;
+  --color-text-tertiary:   #363636;
+
+
+  /* --- TIPOGRAFIA --- */
+  --font-display: "Poppins", sans-serif;
+  --font-body:    "Roboto", sans-serif;
+
+
+  /* Títulos */
+  --text-h1: 3.5rem;  /* 56px */
+  --text-h2: 2.5rem;  /* 40px */
+  --text-h3: 2rem;    /* 32px */
+  --text-h4: 1.5rem;  /* 24px */
+  --text-h5: 1.25rem; /* 20px */
+  --text-h6: 1rem;    /* 16px */
+
+
+  /* Tamanhos de corpo */
+  --text-xs:   0.75rem;  /* 12px */
+  --text-sm:   0.875rem; /* 14px */
+  --text-base: 1rem;     /* 16px */
+  --text-lg:   1.125rem; /* 18px */
+  --text-xl:   1.25rem;  /* 20px */
+  --text-xxl:   1.40rem;  /* 22px */
+   --text-xxxl:   1.55rem;  /* 24px */
+
+
+  /* Pesos */
+  --weight-light:    300;
+  --weight-regular:  400;
+  --weight-medium:   500;
+  --weight-semibold: 600;
+  --weight-bold:     700;
+
+
+  /* --- ESPAÇAMENTOS --- */
+  --space-4:  1rem;
+  --space-8:  2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-24: 6rem;
+
+
+  /* --- BORDAS --- */
+  --radius-sm:   4px;
+  --radius-md:   8px;
+  --radius-lg:   16px;
+  --radius-full: 9999px;
+
+
+  /* --- SOMBRAS --- */
+  --shadow-glow-xs:     0 0 8px rgba(255, 255, 255, 0.06);
+  --shadow-glow-sm:     0 0 20px rgba(255, 255, 255, 0.10);
+  --shadow-glow-md:     0 0 40px rgba(255, 255, 255, 0.15);
+  --shadow-glow-lg:     0 0 60px rgba(255, 255, 255, 0.20);
+  --shadow-glow-xl:     0 0 80px rgba(255, 255, 255, 0.30);
+  --shadow-glow-border: 0 0 0 1px rgba(255, 255, 255, 0.12), 0 0 40px rgba(255, 255, 255, 0.15);
+
+
+  /* --- Z-INDEX --- */
+  --z-base:    0;
+  --z-card:    10;
+  --z-header:  100;
+  --z-overlay: 200;
+}
