@@ -3,14 +3,13 @@ header {
     display: flex;
     padding: 0px 16px 0 16px;
     justify-content: center;
-    padding-right: 75px;
-    gap: 75px;
+    gap: 40px;
     border-bottom: 0.1px solid var(--color-border-header);;
 }
 
 .div-logo img {
     width: auto;
-    height: 100px;
+    height: 70px;
 }
 
 header nav {
@@ -28,8 +27,8 @@ header nav ul {
  header a {
     color: var(--color-text-primary);
     text-decoration: none;
-    font-size: var(--text-xl);
-    padding: 15px;
+    font-size: var(--text-base);
+    padding: 10px;
     
 }
 
@@ -47,17 +46,78 @@ ul a:hover {
     transition: 0.6s;
 }
 
+.menu-burger {
+    display: none;
+}
 
-@media screen and (min-width: 860px) {
+
+
+
+
+@media screen and (max-width: 768px) {
+    
     header li {
         display: none;
     }
+
+    .div-logo img {
+        height: 90px;
+        padding: 0px 18rem 0px 5rem;
+    }
+
+    .menu-burger img {
+    width: auto;
+    height: 22px;
+}
+
+.menu-burger {
+    display: flex;
+    align-items: center;
+    
+}
+
+.menu-burger a:hover img{
+    width: auto;
+    height: 26px;
+}
+
+header nav.ativo ul{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 120px;
+  left: 77%;
+  z-index: 100;
+  gap: 40px;
+  
+}
+
+
+
+nav.ativo li {
+    display: block !important; 
+    width: 100%;
+    
+}
+
+.menu-burger.active img {
+    padding: 200px;
+}
+    
 }
 
 @media screen and (min-width: 1440px) {
     header a {
         font-size: var(--text-xxl);
     }
+
+    .div-logo img {
+    height: 90px;
+}
+
+header {
+    gap: 80px;
+}
 
     
 }
@@ -66,4 +126,8 @@ ul a:hover {
     header a {
         font-size: var(--text-xxxl);
     }
+
+    .div-logo img {
+    height: 120px;
+}
 }
