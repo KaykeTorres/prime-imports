@@ -4,7 +4,7 @@ header {
     padding: 0px 16px 0 16px;
     justify-content: center;
     gap: 40px;
-    border-bottom: 0.1px solid var(--color-border-header);;
+    border-bottom: 0.1px solid var(--color-border-header);
 }
 
 .div-logo img {
@@ -14,27 +14,23 @@ header {
 
 header nav {
     display: flex;
-    
 }
 
 header nav ul {
     display: flex;
     align-items: center;
     list-style: none;
-    
 }
 
- header a {
+header a {
     color: var(--color-text-primary);
     text-decoration: none;
     font-size: var(--text-base);
     padding: 10px;
-    
 }
 
 header ul {
     gap: 75px;
-    
 }
 
 .dourado a {
@@ -50,84 +46,144 @@ ul a:hover {
     display: none;
 }
 
+.menu-x {
+    display: none;
+}
 
-
-
-
+/* =======================================
+   MOBILE / RESPONSIVO (ATÉ 768px)
+   ======================================= */
 @media screen and (max-width: 768px) {
-    
+
+    header {
+        position: relative;
+        /* Base para posicionar os botões e o menu fixos nela */
+        justify-content: flex-start;
+        /* Alinha a logo na esquerda */
+        align-items: center;
+        height: 90px;
+        /* Garante tamanho fixo pro cabeçalho */
+        padding: 0 24px;
+    }
+
     header li {
         display: none;
+        /* Esconde os links padrões */
     }
 
     .div-logo img {
-        height: 90px;
-        padding: 0px 18rem 0px 5rem;
+        height: 70px;
+        padding: 0;
+        /* Remove aquele padding gigante que quebrava o layout */
     }
 
-    .menu-burger img {
-    width: auto;
-    height: 22px;
+    /* --- POSICIONAMENTO DOS BOTÕES (HAMBÚRGUER E X) --- */
+    .menu-burger,
+    .menu-x {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        /* Centraliza perfeitamente na vertical do header */
+        right: 24px;
+        /* Ambos ficam exatamente na mesma distância da borda direita */
+    }
+
+    .menu-burger img,
+    .menu-x img {
+        width: auto;
+        height: 22px;
+        display: block;
+    }
+
+    /* --- COMPORTAMENTO INICIAL --- */
+    .menu-burger {
+        display: flex;
+    }
+
+    .menu-x {
+        display: none;
+        /* Começa escondido */
+    }
+
+    /* --- HOVER DOS BOTÕES --- */
+    .menu-burger a:hover img,
+    .menu-x a:hover img {
+        height: 28px;
+        transition: 500ms;
+    }
+
+    /* --- DINÂMICA DE TROCA (CLASSES ATIVAS) --- */
+    .menu-burger.ativo {
+        display: none !important;
+        /* Some o hambúrguer */
+    }
+
+    .menu-x.ativo {
+        display: flex !important;
+        /* Mostra o X no exato mesmo lugar */
+    }
+
+    /* --- MENU MOBILE DINÂMICO --- */
+    header nav.ativo ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+
+        top: 90px;
+        /* Cola exatamente abaixo do header */
+        right: 0;
+        /* Gruda na borda direita e acompanha qualquer tela */
+        width: 108px;
+        /* Largura fixa perfeita para a caixinha */
+
+        z-index: 100;
+        gap: 40px;
+        background-color: black;
+        padding: 30px 20px;
+        border: 1px solid var(--color-border-header);
+        border-top: none;
+        transition: 600ms;
+    }
+
+    nav.ativo li {
+        display: block !important;
+        width: 100%;
+        text-align: right;
+        /* Texto alinhado à direita para seguir o fluxo do botão */
+    }
+
+    ul a:hover {
+        font-size: 20px;
+        transition: 0.6s;
+    }
 }
 
-.menu-burger {
-    display: flex;
-    align-items: center;
-    
-}
-
-.menu-burger a:hover img{
-    width: auto;
-    height: 26px;
-}
-
-header nav.ativo ul{
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 120px;
-  left: 77%;
-  z-index: 100;
-  gap: 40px;
-  
-}
-
-
-
-nav.ativo li {
-    display: block !important; 
-    width: 100%;
-    
-}
-
-.menu-burger.active img {
-    padding: 200px;
-}
-    
-}
-
+/* =======================================
+   TELAS GRANDES (1440px +)
+   ======================================= */
 @media screen and (min-width: 1440px) {
     header a {
         font-size: var(--text-xxl);
     }
 
     .div-logo img {
-    height: 90px;
+        height: 90px;
+    }
+
+    header {
+        gap: 80px;
+    }
 }
 
-header {
-    gap: 80px;
-}
-
-    
-}
-
+/* =======================================
+   TELAS ULTRA-WIDE (1920px +)
+   ======================================= */
 @media screen and (min-width: 1920px) {
     header a {
         font-size: var(--text-xxxl);
     }
 
     .div-logo img {
-    height: 120px;
-}
+        height: 120px;
+    }
 }

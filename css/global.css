@@ -1,15 +1,33 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
+    color: var(--color-text-primary);
     font-family: var(--font-body);
-    font-weight: var(--weight-regular);
+    font-weight: var(--weight-light);
     background-color: var(--color-bg-primary);
 }
 
 h1 h2 h3 h4 h5 h6 {
     font-family: var(--font-display);
+    font-size: var(--text-m);
+    font-weight: var(--weight-light);
+}
+
+
+a {
+    color: var(--color-text-primary);
+    text-decoration: none;
+    font-size: var(--text-mobile);
+}
+
+p {
+    font-size: var(--text-mobile);
+}
+
+em {
+    color: var(--color-border-card);
 }
