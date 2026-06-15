@@ -1,0 +1,154 @@
+.video-container{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.video-container video{
+    width: auto;
+    height: 182px;
+    border: 1px solid var(--color-border-card);
+}
+
+.faixada-prime-imports img {
+    width: auto;
+    height: 200px;
+    object-fit: cover;
+}
+
+.sobre {
+    margin: 30px;
+    text-align: center;
+}
+
+.sobre p {
+    margin-top: 20px;
+}
+
+
+.menu-grid {
+    display: grid;
+    justify-self: center;
+    
+    
+}
+
+.menu-card h2 {
+    margin: 20px;
+    text-align: center;
+}
+
+.menu-card img {
+    width: 240px;
+    height: 300px;
+    margin: 20px;
+    border: 1px solid var(--color-border-card);
+    border-radius: 6px;
+    box-shadow: var(--shadow-glow-sm);
+    
+}
+
+.menu-card img:hover{
+   border-radius: 34px;
+   box-shadow: var(--shadow-glow-xl);
+
+   transition: all 1s ease-out;
+
+   animation: pulse 2s infinite;
+}
+
+
+
+
+@keyframes pulse {
+
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.sobre h1{
+   animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+  0%,100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+
+@media screen and (min-width: 425px) {
+    .video-container video{
+    width: auto;
+    height: 240px;
+    
+}
+
+}
+
+@media screen and (min-width: 768px) {
+    .video-container video{
+    width: auto;
+    height: 424px;
+    
+}
+
+.menu-grid {
+    display: grid;
+    justify-self: center;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+
+}
+
+@media screen and (min-width: 1024px) {
+    .video-container video{
+    width: auto;
+    height: 576px;
+    
+}
+
+.menu-grid {
+    display: grid;
+    justify-self: center;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+
+}
+
+@media screen and (min-width: 1440px) {
+
+.video-container video{
+    width: auto;
+    height: 676px;
+    
+}
+
+.menu-grid {
+    display: grid;
+    justify-self: center;
+    grid-template-columns: repeat(4, 1fr);
+    
+}
+
+.sobre p {
+    font-size: var(--text-desktop-);
+}
+
+}

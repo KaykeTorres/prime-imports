@@ -26,15 +26,16 @@
 
 
   /* Títulos */
-  --text-xxl: 3.5rem;  /* 56px */
+  --text-xxl: 3rem;  /* 60px */
   --text-xl: 2.5rem;  /* 40px */
   --text-gg: 2rem;    /* 32px */
   --text-g: 1.5rem;  /* 24px */
   --text-m: 1.25rem; /* 20px */
   --text-p: 1rem;    /* 16px */
 
-  --text-mobile-title: 18px;
   --text-mobile-: 12px;
+  --text-tablet-: 16px;
+  --text-desktop-: 20px;
 
   /* Tamanhos de corpo */
   --text-xs:   0.75rem;  /* 12px */
