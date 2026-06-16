@@ -9,16 +9,43 @@
     height: 182px;
     border: 1px solid var(--color-border-card);
 }
+.faixada-prime-imports {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+
+}
 
 .faixada-prime-imports img {
-    width: auto;
-    height: 200px;
+    width: 100%;
     object-fit: cover;
+
+   animation: faixadaPulse 3s infinite;
 }
+
+
+@keyframes faixadaPulse {
+
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.01);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
 
 .sobre {
     margin: 30px;
     text-align: center;
+    margin-top: 100px;
 }
 
 .sobre p {
@@ -36,6 +63,7 @@
 .menu-card h2 {
     margin: 20px;
     text-align: center;
+    margin-top: 60px;
 }
 
 .menu-card img {
@@ -149,6 +177,14 @@
 
 .sobre p {
     font-size: var(--text-desktop-);
+}
+
+.faixada-prime-imports img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    margin: 100px 0 100px 0;
+
 }
 
 }

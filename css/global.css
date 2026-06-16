@@ -31,3 +31,8 @@ p {
 em {
     color: var(--color-border-card);
 }
+
+strong {
+    color: var(--color-border-card);
+    font-size: 20px;
+}
