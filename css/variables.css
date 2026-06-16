@@ -10,7 +10,6 @@
   --color-bg-secondary: #111111;
   --color-bg-card:      #161616;
   --color-border-card: #D4AF37;
-  --color-border-header: #d4af376e;
 
 
   /* --- CORES DE TEXTO --- */
@@ -32,7 +31,7 @@
   --text-g: 1.5rem;  /* 24px */
   --text-m: 1.25rem; /* 20px */
   --text-p: 0.9 rem;    /* 16px */
-  --text-pp: 0.7rem;    /* 12px */
+  --text-pp: 0.8rem;    /* 12px */
 
 
   --text-mobile-: 12px;
@@ -82,9 +81,9 @@
 
 
   /* --- Z-INDEX --- */
-  --z-base:    0;
-  --z-card:    10;
-  --z-header:  100;
+  --z-base: 0;
+  --z-card: 10;
+  --z-header: 100;
   --z-overlay: 200;
 
 }

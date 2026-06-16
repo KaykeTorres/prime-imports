@@ -16,3 +16,10 @@ btnX.addEventListener('click', function() {
     btnHamburguer.classList.remove('ativo');// Mostra o hambúrguer de volta
     btnX.classList.remove('ativo');        // Esconde o X
 });
+
+
+document.getElementById("catalogo").addEventListener("change", function() {
+    if (this.value) {
+        window.location.href = this.value;
+    }
+});

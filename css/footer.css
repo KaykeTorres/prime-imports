@@ -38,6 +38,29 @@
     
 }
 
+footer h4 {
+    width: 100%;
+    object-fit: cover;
+
+   animation: compreJa 1s infinite;
+}
+
+
+@keyframes compreJa {
+
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 @media screen and (min-width: 425px) {
     .google-maps {
     width: 400px;
