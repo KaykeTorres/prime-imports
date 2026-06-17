@@ -1,0 +1,190 @@
+.marca {
+    background-color: var(--color-bg-primary);
+    display: flex;
+    padding: 16px 16px 16px 16px;
+    justify-content: center;
+    gap: 40px;
+    border: 0.1px solid var(--color-border-card);
+}
+
+.marca nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.marca a {
+    color: var(--color-text-primary);
+    text-decoration: none;
+    font-size: var(--text-lg);
+    padding: 10px;
+}
+
+.marca ul {
+    gap: 70px;
+}
+
+
+
+/* =======================================
+   MOBILE / RESPONSIVO (ATÉ 768px)
+   ======================================= */
+@media screen and (max-width: 768px) {
+
+    .marca {
+       display: none;
+    }
+
+    
+
+    .marca li {
+        display: none;
+        /* Esconde os links padrões */
+    }
+
+    .div-logo img {
+        height: 70px;
+        padding: 0;
+        /* Remove aquele padding gigante que quebrava o layout */
+    }
+
+    /* --- POSICIONAMENTO DOS BOTÕES (HAMBÚRGUER E X) --- */
+    .menu-burger,
+    .menu-x {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        /* Centraliza perfeitamente na vertical do .marca */
+        right: 24px;
+        /* Ambos ficam exatamente na mesma distância da borda direita */
+    }
+
+    .menu-burger img,
+    .menu-x img {
+        width: auto;
+        height: 22px;
+        display: block;
+    }
+
+    /* --- COMPORTAMENTO INICIAL --- */
+    .menu-burger {
+        display: flex;
+    }
+
+    .menu-x {
+        display: none;
+        /* Começa escondido */
+    }
+
+    /* --- HOVER DOS BOTÕES --- */
+    .menu-burger a:hover img,
+    .menu-x a:hover img {
+        height: 28px;
+        transition: 500ms;
+    }
+
+    /* --- DINÂMICA DE TROCA (CLASSES ATIVAS) --- */
+    .menu-burger.ativo {
+        display: none !important;
+        /* Some o hambúrguer */
+    }
+
+    .menu-x.ativo {
+        display: flex !important;
+        /* Mostra o X no exato mesmo lugar */
+    }
+
+    /* --- MENU MOBILE DINÂMICO --- */
+    .marca nav.ativo ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+
+        top: 90px;
+        /* Cola exatamente abaixo do .marca */
+        right: 0;
+        /* Gruda na borda direita e acompanha qualquer tela */
+        width: 108px;
+        /* Largura fixa perfeita para a caixinha */
+        gap: 40px;
+        background-color: black;
+        padding: 30px 20px;
+        border: 1px solid var(--color-border-card);
+        border-top: none;
+        transition: 600ms;
+    }
+
+    nav.ativo li {
+        display: block !important;
+        width: 100%;
+        text-align: right;
+        /* Texto alinhado à direita para seguir o fluxo do botão */
+    }
+
+    ul a:hover {
+        font-size: 20px;
+        transition: 0.6s;
+    }
+}
+
+
+/* =======================================
+   TELAS GRANDES (1024px +)
+   ======================================= */
+@media screen and (min-width: 1024px) {
+    .catalogo {
+    font-size: var(--text-p);
+    
+    
+}
+}
+
+
+
+/* =======================================
+   TELAS GRANDES (1440px +)
+   ======================================= */
+@media screen and (min-width: 1440px) {
+    .marca a {
+        font-size: var(--text-xxl);
+    }
+
+    .div-logo img {
+        height: 90px;
+    }
+
+    .marca {
+        gap: 80px;
+    }
+
+    .catalogo {
+    font-size: var(--text-m);
+    }
+
+    .marca ul {
+    gap: 120px;
+}
+
+}
+
+/* =======================================
+   TELAS ULTRA-WIDE (1920px +)
+   ======================================= */
+@media screen and (min-width: 1920px) {
+    .marca a {
+        font-size: var(--text-xxxl);
+    }
+
+    .div-logo img {
+        height: 120px;
+    }
+
+    .catalogo {
+    font-size: var(--text-m);
+}
+
+.marca ul {
+    gap: 170px;
+}
+
+}

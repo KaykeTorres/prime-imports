@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 body {
     color: var(--color-text-primary);
     font-family: var(--font-body);
@@ -44,3 +45,4 @@ strong {
     color: var(--color-border-card);
     font-size: 20px;
 }
+

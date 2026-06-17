@@ -9,6 +9,21 @@
     height: 182px;
     border: 1px solid var(--color-border-card);
 }
+
+.banner-container{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.banner-container img {
+    width: auto;
+    height: 182px;
+    border: 1px solid var(--color-border-card);
+    
+}
+
+
 .faixada-prime-imports {
     display: flex;
     justify-content: center;
@@ -66,6 +81,11 @@
     margin-top: 60px;
 }
 
+.menu-card p {
+    text-align: center;
+    margin: 16px;
+}
+
 .menu-card img {
     width: 240px;
     height: 300px;
@@ -76,10 +96,6 @@
     
 }
 
-.card-secondary img {
-    border: 1px solid var(--color-border-card-secondary);
-}
-
 .menu-card img:hover{
    border-radius: 34px;
    box-shadow: var(--shadow-glow-xl);
@@ -87,6 +103,7 @@
    transition: all 1s ease-out;
 
    animation: pulse 2s infinite;
+   
 }
 
 
@@ -126,7 +143,13 @@
 @media screen and (min-width: 425px) {
     .video-container video{
     width: auto;
-    height: 240px;
+    height: 239px;
+    
+}
+
+.banner-container img{
+    width: auto;
+    height: 239px;
     
 }
 
@@ -136,6 +159,12 @@
     .video-container video{
     width: auto;
     height: 424px;
+    
+}
+
+.banner-container img{
+   width: auto;
+    height: 430px;
     
 }
 
@@ -155,6 +184,12 @@
     
 }
 
+.banner-container img{
+   width: auto;
+    height: 574px;
+    
+}
+
 .menu-grid {
     display: grid;
     justify-self: center;
@@ -168,6 +203,12 @@
 
 .video-container video{
     width: auto;
+    height: 676px;
+    
+}
+
+.banner-container img{
+   width: auto;
     height: 676px;
     
 }
