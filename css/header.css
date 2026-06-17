@@ -14,13 +14,22 @@ header {
     font-size: var(--text-pp);
     border: none;
     outline: none;
+    text-decoration: none;
+
     
+    
+    -webkit-appearance: none;  /* Chrome, Safari, Edge e Opera */
+
+    -moz-appearance: none;     /* Firefox */
+
+    appearance: none;          /* Padrão moderno */
 }
 
 
 
 .catalogo option {
     background-color: var(--color-bg-primary);
+    padding: 20px;
 }
 
 .div-logo img {
@@ -62,26 +71,6 @@ header ul {
 }
 
 
-ul :hover {
-   animation: pulse 2s infinite;
-   animation-timing-function: ease-in-out;
-}
-
-
-@keyframes pulse {
-
-  0% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.1px);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
 
 /* =======================================
    MOBILE / RESPONSIVO (ATÉ 768px)
@@ -190,6 +179,20 @@ ul :hover {
     }
 }
 
+
+/* =======================================
+   TELAS GRANDES (1024px +)
+   ======================================= */
+@media screen and (min-width: 1024px) {
+    .catalogo {
+    font-size: var(--text-p);
+    
+    
+}
+}
+
+
+
 /* =======================================
    TELAS GRANDES (1440px +)
    ======================================= */
@@ -207,7 +210,7 @@ ul :hover {
     }
 
     .catalogo {
-    font-size: var(--text-p);
+    font-size: var(--text-m);
     }
 
 }
