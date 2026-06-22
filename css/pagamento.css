@@ -1,0 +1,52 @@
+.pagamento {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+
+}
+
+.pagamento a strong{
+    font-size: 20px;
+    
+}
+
+.pagamento img {
+    width: auto;
+    object-fit: cover;
+    height: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .pagamento a strong{
+    font-size: 30px;
+    
+}
+
+.pagamento img {
+    width: auto;
+    object-fit: cover;
+    height: 20px;
+}
+
+.pagamento h3 {
+    font-size: 20px;
+   }
+}
+
+@media screen and (min-width: 1024px) {
+   .pagamento h3 {
+    font-size: 30px;
+   }
+
+   .pagamento img {
+    width: auto;
+    object-fit: cover;
+    height: 30px;
+}
+.pagamento a strong{
+    font-size: 30px;
+    
+}
+}
