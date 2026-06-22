@@ -79,6 +79,7 @@
     margin: 20px;
     text-align: center;
     margin-top: 60px;
+    font-size: var(--text-tablet-);
 }
 
 .menu-card p {
@@ -175,6 +176,10 @@
     
 }
 
+.menu-card h2 {
+    font-size: var(--text-desktop-);
+}
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -195,6 +200,10 @@
     justify-self: center;
     grid-template-columns: repeat(2, 1fr);
     
+}
+
+.menu-card h2 {
+    font-size: var(--text-g);
 }
 
 }
@@ -230,6 +239,10 @@
     object-fit: cover;
     margin: 100px 0 100px 0;
 
+}
+
+.menu-card h2 {
+    font-size: var(--text-g);
 }
 
 }
